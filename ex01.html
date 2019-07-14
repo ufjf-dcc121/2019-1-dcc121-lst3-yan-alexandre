@@ -41,6 +41,7 @@
         var grid7 = document.getElementById("grid7");
         var grid8 = document.getElementById("grid8");
         var grid9 = document.getElementById("grid9");
+        var casa = "O";
 
         grid1.onclick = function() {
             addx(grid1);
@@ -70,7 +71,16 @@
             addx(grid9);
         }
 
-
+        function addx(i){
+            if (casa == "X"){
+                casa = "O";
+                i.innerHTML = casa;
+            }
+            else if (casa == "O"){
+                casa = "X";
+                i.innerHTML = casa;
+            }
+        }
 
 
     </script>
