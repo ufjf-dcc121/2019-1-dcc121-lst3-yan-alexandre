@@ -60,6 +60,7 @@
     </style>
 </head>
 <body>
+    <h3>Clique no Disco que deseja mover e depois clique em qual torre deseja mover o disco</h3>
     <div class="container">
         <div id="coluna1" class="grid">
             <div id="ob1" onclick="selecionardisco(ob1)" class="torre1">1</div>
@@ -107,7 +108,9 @@
         }
          
          function mudardisco(c){
+            if (document.getElementById(c).childNodes[0] > disco)
             document.getElementById(c).appendChild(disco);
+
          }
 
         
