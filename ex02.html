@@ -74,9 +74,9 @@
         </div>
 
     </div>
-    <button class="mtorre" onclick="mudardisco('torre1')">Torre 1</button>
-    <button class="mtorre" onclick="mudardisco('torre2')">Torre 2</button>
-    <button class="mtorre" onclick="mudardisco('torre3')">Torre 3</button>
+    <button class="mtorre" onclick="mudardisco('coluna1')">Torre 1</button>
+    <button class="mtorre" onclick="mudardisco('coluna2')">Torre 2</button>
+    <button class="mtorre" onclick="mudardisco('coluna3')">Torre 3</button>
 
     <script>
         var coluna1 = document.getElementById("coluna1");
@@ -106,11 +106,8 @@
 
         }
          
-         function mudardisco(i){
-            disco.classList.remove("torre1");
-            disco.classList.remove("torre2");
-            disco.classList.remove("torre3");
-            disco.classList.add(i);
+         function mudardisco(c){
+            document.getElementById(c).appendChild(disco);
          }
 
         
